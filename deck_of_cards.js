@@ -17,6 +17,7 @@ Deck.prototype.loadCards = function () {
   }
 }
 
+//Fisher-Yates shuffling algorithm
 Deck.prototype.shuffle = function() {
   this.loadCards();
   var i = 0
