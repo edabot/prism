@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <script>
+    // $.get( "https://prism.com/about/", function( data ) {
+    //   alert( "Load was performed." );
+    // });
+    $.ajax({
+    url: 'https://prism.com/about/',
+    headers: {"Authorization": "Client-ID 07491d10ee36d13"},
+    type: "GET",
+    dataType: 'html',
+    success: function(resp) {
+      alert("yes");
+    },
+    error(xhr) {
+      alert("no");
+    }
+  });
+    </script>
+
+  </body>
+</html>
